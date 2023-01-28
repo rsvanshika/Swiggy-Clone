@@ -125,7 +125,35 @@
     color: #60b246;
   }
 
-
+  /* corousel styling */
+  .carousel {
+    position:relative;
+    margin-top: 80px;
+    background-color: #171a29;
+    padding:0 20px;
+    contain:content;
+}
+.carousel-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.carousel-inner-content {
+    display: flex;
+    gap: 50px;
+}
+.carousel-item {
+    width: 25%;
+    cursor: pointer;
+    transition: transform .5s cubic-bezier(.215,.61,.355,1);
+    transform: translateZ(0);
+}
+.carousel-item:hover {
+    transform: scale(1.1);
+}
+.carousel-item img {
+    width: 100%;
+}
   /* Content Section */
   .restaurants .container{
     max-width: 1200px;
@@ -177,7 +205,7 @@
     cursor:pointer;
   }
 
-  .filters div:hover{
+  .filters div:active{
     border-bottom:2px solid #282c3f
     /* color:#3d4152;
     position: absolute;
